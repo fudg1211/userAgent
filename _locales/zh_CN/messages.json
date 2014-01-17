@@ -1,0 +1,45 @@
+{
+	"ext_name": {
+		"message": "User Agent Switcher,userAgent Manager"
+	},
+	"ext_description":{
+		"message":"User Agent Switcher\u53ef\u4ee5\u7acb\u5373\u5207\u6362\u6d4f\u89c8\u5668\u7684useragent\uff0c\u65b9\u4fbf\u5feb\u6377\u7f8e\u89c2"
+	},
+	"msg_success":{
+		"message":"\u64cd\u4f5c\u6210\u529f"
+	},
+	"msg_setName":{
+		"message":"\u8bf7\u8f93\u5165\u6807\u793a\u540d\u79f0"
+	},
+	"msg_noDefault":{
+		"message":"Default\u4e0d\u80fd\u4e3a\u6807\u793a\u540d\u79f0"
+	},
+	"msg_setValue":{
+		"message":"\u8bf7\u8bbe\u7f6e\u5bf9\u5e94\u7684\u503c"
+	},
+	"msg_nameAlready":{
+		"message":"\u5df2\u7ecf\u6709\u6539\u6807\u793a\u540d\u79f0"
+	},
+	"msg_resetNiceA":{
+		"message":"\u5982\u679c\u91cd\u7f6e\uff0c\u6240\u6709\u7684\u6570\u636e\u5c06\u88ab\u521d\u59cb\u5316\uff0c\u5305\u62ec\u81ea\u5b9a\u4e49\u7684\u6570\u636e\u3002"
+	},
+	"msg_resetNiceB":{
+		"message":"\u4f60\u786e\u5b9a\u8981\u91cd\u7f6e\u5417\uff1f"
+	},
+	"msg_editNoticeA":{
+		"message":"\u518d\u6b21\u70b9\u51fb\u7f16\u8f91\u6309\u94ae\uff0c"
+	},
+	"msg_editNoticeB":{
+		"message":"\u9000\u51fa\u7f16\u8f91\u6a21\u5f0f"
+	},
+	"msg_delNotice":{
+		"message":"\u5220\u9664\u540e\u4e0d\u53ef\u6062\u590d\uff0c\u786e\u5b9a\u8981\u5220\u9664\u5417\uff1f"
+	},
+	"msg_yes":{
+		"message":"\u786e \u5b9a"
+	},
+	"msg_no":{
+		"message":"\u53d6 \u6d88"
+	}
+
+}

@@ -1,0 +1,45 @@
+{
+	"ext_name": {
+		"message": "User Agent Switcher,userAgent Manager"
+	},
+	"ext_description":{
+		"message":"User Agent Switcher可以立即切换浏览器的useragent，方便快捷美观"
+	},
+	"msg_success":{
+		"message":"操作成功"
+	},
+	"msg_setName":{
+		"message":"请输入标示名称"
+	},
+	"msg_noDefault":{
+		"message":"Default不能为标示名称"
+	},
+	"msg_setValue":{
+		"message":"请设置对应的值"
+	},
+	"msg_nameAlready":{
+		"message":"已经有改标示名称"
+	},
+	"msg_resetNiceA":{
+		"message":"如果重置，所有的数据将被初始化，包括自定义的数据。"
+	},
+	"msg_resetNiceB":{
+		"message":"你确定要重置吗？"
+	},
+	"msg_editNoticeA":{
+		"message":"再次点击编辑按钮，"
+	},
+	"msg_editNoticeB":{
+		"message":"退出编辑模式"
+	},
+	"msg_delNotice":{
+		"message":"删除后不可恢复，确定要删除吗？"
+	},
+	"msg_yes":{
+		"message":"确 定"
+	},
+	"msg_no":{
+		"message":"取 消"
+	}
+
+}

@@ -1,0 +1,49 @@
+.cover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	background: rgba(0,0,0,0.8);
+	z-index: 20;
+}
+
+.dialog{
+	color: #fff;
+}
+
+.dialog button{
+	display: inline-block;
+}
+
+.alert{
+	text-align: center;
+	font-size: 22px;
+}
+
+
+
+.addSetDiv{
+	padding-top: 14px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.doResetData{
+	padding-top: 80px;
+}
+
+.doResetData .tagA{
+	padding:10px 0;
+	font-size: 15px;
+}
+.doResetData .dialogContent{
+	line-height: 25px;
+}
+
+.addSetDiv textarea{
+	width: 305px;
+	height: 90px;
+	font-size: 14px;
+	line-height: 18px;
+}

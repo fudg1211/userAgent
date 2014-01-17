@@ -1,0 +1,1 @@
+chrome.runtime.sendMessage({a:"ua"},function(a){if(a.userAgent&&a.userAgent.length>0){var t=document.createElement("script");t.type="text/javascript",t.text="navigator.__defineGetter__('userAgent', function () { return '"+a.userAgent+"'; });",document.getElementsByTagName("head")[0].appendChild(t)}});

@@ -1,0 +1,45 @@
+{
+	"ext_name": {
+		"message": "User Agent Switcher,userAgent Manager"
+	},
+	"ext_description": {
+		"message": "User Agent Switcher change browser userAgent is quick and easy"
+	},
+	"msg_success": {
+		"message": "Success"
+	},
+	"msg_setName": {
+		"message": "Please set name"
+	},
+	"msg_noDefault": {
+		"message": "No set name width default"
+	},
+	"msg_setValue": {
+		"message": "Please set value"
+	},
+	"msg_nameAlready": {
+		"message": "Already has this name"
+	},
+	"msg_resetNiceA": {
+		"message": "After a reset,the custom data will be deleted."
+	},
+	"msg_resetNiceB": {
+		"message": "are you sure want to reset?"
+	},
+	"msg_editNoticeA": {
+		"message": "Click the edit button again"
+	},
+	"msg_editNoticeB": {
+		"message": "to exit the edit mode."
+	},
+	"msg_delNotice":{
+		"message":"Unrecoverable deletion,<br/>are you sure you want to delete?"
+	},
+	"msg_yes":{
+		"message":"Yes"
+	},
+	"msg_no":{
+		"message":"No"
+	}
+
+}
