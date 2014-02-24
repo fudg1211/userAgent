@@ -47,10 +47,11 @@ define(['./global/common', './global/data'], function (com) {
 			this.editNum=false;
 			this.doStatus=null;
 
-			var html = '',text;
+			var html = '',text,textA;
 			for(var i=0;i<data.length;i++){
 				text = data[i][0];
-				html+='<div class="setUserAgentDiv J-setUserAgentDiv"><button class="m-button J-setUserAgent" id="'+text+'" num="'+i+'" val="'+data[i][1]+'">'+text+'</button></div>';
+				textA = text.replace(/_a_a/g,'.');
+				html+='<div class="setUserAgentDiv J-setUserAgentDiv"><button class="m-button J-setUserAgent" id="'+text+'" num="'+i+'" val="'+data[i][1]+'">'+textA+'</button></div>';
 			}
 
 			this['list'].html(html);
@@ -82,7 +83,7 @@ define(['./global/common', './global/data'], function (com) {
 
 
 		doSetUserAgentNext:function(obj){
-			var type = obj.text();
+			var type = $(obj[0]).attr('id');
 			if(this.setUserAgentByType(type)){
 				this.changeType(type);
 
@@ -208,6 +209,9 @@ define(['./global/common', './global/data'], function (com) {
 				return false;
 			}
 
+			item = item.replace(/\./g,'_a_a');
+
+
 			if(this.editNum){
 
 				for(;i<data.length;i++){
@@ -290,7 +294,7 @@ define(['./global/common', './global/data'], function (com) {
 			this.doStatus='edit';
 			var str='<span class="delItem closeItem"></span>'
 			this['JsetUserAgentDiv_rel']().each(function(){
-				var obj = $(this),itemName = obj.text().trim();
+				var obj = $(this).children().eq(0),itemName = obj.attr('id').trim();
 
 				if(itemName!=='Default' && itemName!==uaType){
 					$(this).append(str);
@@ -337,8 +341,7 @@ define(['./global/common', './global/data'], function (com) {
 				return false;
 			}
 
-			obj = $(obj).parent();
-			var a = obj.text();
+			var a = $(obj).prev().attr('id');
 
 			if(a==='Default' || !a){
 				return false;
