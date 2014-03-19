@@ -50,8 +50,8 @@ define(['./global/common', './global/data'], function (com) {
 			var html = '',text,textA;
 			for(var i=0;i<data.length;i++){
 				text = data[i][0];
-				textA = text.replace(/_a_a/g,'.');
-				html+='<div class="setUserAgentDiv J-setUserAgentDiv"><button class="m-button J-setUserAgent" id="'+text+'" num="'+i+'" val="'+data[i][1]+'">'+textA+'</button></div>';
+				textA = 'ua_'+ i.toString();
+				html+='<div class="setUserAgentDiv J-setUserAgentDiv"><button class="m-button J-setUserAgent" id="'+textA+'" num="'+i+'" val="'+data[i][1]+'">'+text+'</button></div>';
 			}
 
 			this['list'].html(html);
@@ -60,7 +60,7 @@ define(['./global/common', './global/data'], function (com) {
 			var uaType = this.backgroundPage.uaType;
 
 			if(!uaType){
-				uaType='Default';
+				uaType='ua_0';
 			}
 
 			this['add'].prop('disabled',false);
@@ -106,11 +106,11 @@ define(['./global/common', './global/data'], function (com) {
 		setUserAgentByType: function (type) {
 			var lastType = this.backgroundPage.uaType;
 
-			if (lastType === type || (!lastType && type==='Default')) {
+			if (lastType === type || (!lastType && type==='ua_0')) {
 				return false;
 			}
 
-			if (type === 'Default' || !type) {
+			if (type === 'ua_0' || !type) {
 				chrome.browserAction.setIcon({path: "images/icons/icon-48.png"})
 			} else {
 				chrome.browserAction.setIcon({path: "images/icons/icon-48-1.png"})
@@ -209,8 +209,6 @@ define(['./global/common', './global/data'], function (com) {
 				return false;
 			}
 
-			item = item.replace(/\./g,'_a_a');
-
 
 			if(this.editNum){
 
@@ -265,7 +263,7 @@ define(['./global/common', './global/data'], function (com) {
 				funs:[
 					function(){
 						com.storage.local.remove('customData');
-						self.backgroundPage.uaType='Default';
+						self.backgroundPage.uaType='ua_0';
 						chrome.browserAction.setIcon({path: "images/icons/icon-48.png"});
 						setTimeout(function(){
 							window.location.reload();
@@ -294,9 +292,9 @@ define(['./global/common', './global/data'], function (com) {
 			this.doStatus='edit';
 			var str='<span class="delItem closeItem"></span>'
 			this['JsetUserAgentDiv_rel']().each(function(){
-				var obj = $(this).children().eq(0),itemName = obj.attr('id').trim();
+				var obj = $(this).children().eq(0),itemName = obj.parent().text().trim();
 
-				if(itemName!=='Default' && itemName!==uaType){
+				if(itemName!=='ua_0' && itemName!==uaType){
 					$(this).append(str);
 				}
 			});
@@ -308,7 +306,7 @@ define(['./global/common', './global/data'], function (com) {
 			var name = obj.text(),val = obj.attr('val'),self = this;
 			this.editNum = parseInt(obj.attr('num'));
 
-			if(name==='Default'){
+			if(name==='ua_0'){
 				return false;
 			}
 
@@ -341,7 +339,7 @@ define(['./global/common', './global/data'], function (com) {
 				return false;
 			}
 
-			var a = $(obj).prev().attr('id');
+			var a = $(obj).parent().text();
 
 			if(a==='Default' || !a){
 				return false;

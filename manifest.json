@@ -18,6 +18,8 @@
 
 	"permissions": [ "webRequest", "webRequestBlocking", "tabs", "http://*/", "https://*/", "contextMenus" ],
 
+	"key":"ighgcligfbemmpnidpkhikmnmeohfafb",
+
 	"content_scripts": [ {
 		"js": [ "js/content.js" ],
 		"matches": [ "*://*/*" ],
