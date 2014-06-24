@@ -1,9 +1,9 @@
 {
 	"ext_name": {
-		"message": "User Agent Switcher,userAgent Manager"
+		"message": "User Agent"
 	},
 	"ext_description":{
-		"message":"User Agent Switcher可以立即切换浏览器的useragent，方便快捷美观"
+		"message":"UserAgent Switcher可以立即切换浏览器的ua，一键模拟各种浏览器和手机浏览器，开发者必备助手"
 	},
 	"msg_success":{
 		"message":"操作成功"

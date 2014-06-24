@@ -1,9 +1,9 @@
 {
 	"ext_name": {
-		"message": "User Agent Switcher,userAgent Manager"
+		"message": "User Agent"
 	},
 	"ext_description":{
-		"message":"User Agent Switcher\u53ef\u4ee5\u7acb\u5373\u5207\u6362\u6d4f\u89c8\u5668\u7684useragent\uff0c\u65b9\u4fbf\u5feb\u6377\u7f8e\u89c2"
+		"message":"UserAgent Switcher\u53ef\u4ee5\u7acb\u5373\u5207\u6362\u6d4f\u89c8\u5668\u7684ua\uff0c\u4e00\u952e\u6a21\u62df\u5404\u79cd\u6d4f\u89c8\u5668\u548c\u624b\u673a\u6d4f\u89c8\u5668\uff0c\u5f00\u53d1\u8005\u5fc5\u5907\u52a9\u624b"
 	},
 	"msg_success":{
 		"message":"\u64cd\u4f5c\u6210\u529f"
@@ -36,7 +36,7 @@
 		"message":"\u5220\u9664\u540e\u4e0d\u53ef\u6062\u590d\uff0c\u786e\u5b9a\u8981\u5220\u9664\u5417\uff1f"
 	},
 	"msg_yes":{
-		"message":"\u786e \u5b9a"
+		"message":"\u786e\u5b9a"
 	},
 	"msg_no":{
 		"message":"\u53d6 \u6d88"

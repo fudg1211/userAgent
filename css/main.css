@@ -55,3 +55,14 @@
 .closeItem:hover{
 	cursor: pointer;
 }
+
+.editing button{
+	color:blue;
+}
+
+.comments{
+	position: absolute;
+	bottom: 17px;
+	right: 10px;
+	color: blue;
+}
